@@ -16,7 +16,7 @@ const display = (data) => {
 }
 
 function showExpenses() {
-  if (!data) return;
+  if (!data) location.reload();
   chartContainer.innerHTML = '';
   
   data.forEach((obj) => {
